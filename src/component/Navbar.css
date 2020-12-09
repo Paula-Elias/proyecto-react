@@ -1,11 +1,11 @@
-.navbar {
+/* .navbar {
     min-height: 15vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     margin-top: 30px;
-}
+} */
 
 a {
  width: 95%;
@@ -13,6 +13,10 @@ a {
  padding: 10px;
  text-decoration: none;
  text-transform: none;
- background-color: green;
- color: white;
+ background-color: green !important;
+ color: white !important;
+}
+
+.navbar-brand {
+    font-size: 2.5rem !important;
 }

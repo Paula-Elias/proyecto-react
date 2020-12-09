@@ -1,13 +1,20 @@
 import React from 'react'; 
 import './App.css';
 import Navbar from './component/Navbar'; 
+import Footer from './component/Footer';
+import ItemListContainer from './component/ItemlistContainer'; 
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar title= "cholo"/>
-    <h1>Hijas del Monte</h1>
-    <h3> Tienda online de naturaleza viva</h3>
+      <Navbar />
+
+      <ItemListContainer titulo="Esta es mi futura lista de items" /> 
+      
+
+      <Footer />
+    
     </div>
   );
 }
