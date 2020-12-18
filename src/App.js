@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './component/Navbar'; 
 import Footer from './component/Footer';
-import ItemListContainer from './component/ItemlistContainer'; 
+import ItemListContainer from './component/Items/ItemlistContainer'; 
 
 
 function App() {

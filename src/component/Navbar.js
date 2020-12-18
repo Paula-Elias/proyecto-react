@@ -1,6 +1,6 @@
 import React from 'react'; 
 import './Navbar.css'; 
-import CartWidget from './CartWidget'; 
+import CartWidget from '../component/Items/CartWidget'; 
 
 /* function Navbar(cholo) {
     const {title} = cholo; 
