@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './component/Navbar'; 
 import Footer from './component/Footer';
 import ItemListContainer from './component/Items/ItemlistContainer'; 
+import ItemDetailContainer from './component/Items/ItemDetailContainer'; 
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <ItemListContainer titulo="Esta es mi futura lista de items" /> 
+      <ItemListContainer nombre="Sebastian" /> 
+
+      <ItemDetailContainer />
       
 
       <Footer />

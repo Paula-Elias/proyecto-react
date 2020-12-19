@@ -1,15 +1,33 @@
-import React from 'react'; 
+import React,  {useState, useEffect} from 'react'; 
+import Item from './Item';
 
-function ItemList() {
 
-    setTimeout(() => {
-        console.log("Cargando base de datos...")
-       }, 2000);
+function ItemList(props) {
 
-     return (
-            <div> 
-                <h3> Esperando... </h3>
-            </div> 
+    const [items, setItems] = useState(false);
+
+    useEffect(()=>{
+      setTimeout(()=> {
+        fetch("https://5fdd034948321c00170125e4.mockapi.io/api/v1/plantas")
+          .then((response)=> {
+            return response.json();
+          })
+          .then((data)=>{
+            setItems(data);
+          });
+      }, 3000);
+    },[]) //Esto se ejecuta apenas se monta el componente / onInit
+    
+    return(
+      <div>
+      {items ? 
+      items.map((i,index)=>(
+        <Item key={index} nombre={i.nombre} precio={i.precio} tipo={i.tipo}/>
+      ) ) 
+      : 
+      <p>Trayendo información desde base de datos...</p>}
+      
+      </div>
     )
 };
 

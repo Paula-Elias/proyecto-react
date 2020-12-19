@@ -1,11 +1,16 @@
 import React from 'react'; 
 
-function Item(){
-    return(
-        <div> 
-            <h3> se supone que esto seria un item</h3>
-        </div>
-    );
+function Item(props){
+
+  return (
+    <div>
+    <h5>{props.nombre}</h5>
+    <li>Precio: $ {props.precio}</li>
+    <li>Categoría: {props.tipo}</li>
+  <hr></hr>
+</div>
+  )
+  
 }
 
 export default Item; 
