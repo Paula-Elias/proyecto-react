@@ -1,31 +1,22 @@
-import React,  {useState, useEffect} from 'react'; 
+import React from 'react'; 
+import Contador from './ItemCount';
 
 
 export default function ItemDetail(props) {
-    const [count, setCount] = useState(0)
 
-    useEffect(()=>{
-      if(count < 0){
-        setCount(0)
-      }else{
-        if(count > 5){
-          setCount(5)
-        }
-      }
-    },[count]) 
-    
-      return(
-        <div>
-        <h4> Esta es tu elección en el carrito: </h4>
+    return(
+      <div>
+        <h3>Tu Selección de Carrito es: </h3>
+     
+       <h4> {props.nombre} </h4>
+        <img src={props.img} />
         <h6>{props.nombre}</h6>
         <p>${props.precio}</p>
-        <input disabled={count === 5 ?  true : false} type="button" value="Agregar" onClick={()=>setCount(count+1)}/>
-        {count}
-        <input disabled={count === 0 ?  true : false} type="button" value="Eliminar" onClick={()=>setCount(count-1)}/> 
-        <br></br>
+
+        <Contador />
         <button>Comprar</button>
         <hr></hr>
-        </div>
-        )
-
+     
+      </div>
+    ) 
 }

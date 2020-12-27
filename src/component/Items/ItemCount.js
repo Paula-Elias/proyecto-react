@@ -18,7 +18,6 @@ useEffect(()=>{
 
   return(
     <div>
-    <h6>Este es el ItemCount</h6>
     <input disabled={count === 5 ?  true : false} type="button" value="Agregar" onClick={()=>setCount(count+1)}/>
     {count}
     <input disabled={count === 0 ?  true : false} type="button" value="Eliminar" onClick={()=>setCount(count-1)}/>

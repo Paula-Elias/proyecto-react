@@ -8,7 +8,7 @@ function ItemList(props) {
 
     useEffect(()=>{
       setTimeout(()=> {
-        fetch("https://5fdd034948321c00170125e4.mockapi.io/api/v1/plantas")
+        fetch(`data.json`)
           .then((response)=> {
             return response.json();
           })
@@ -17,12 +17,15 @@ function ItemList(props) {
           });
       }, 3000);
     },[]) //Esto se ejecuta apenas se monta el componente / onInit
-    
+    console.log(items);
+
     return(
       <div>
-      {items ? 
+      {
+      items ? 
       items.map((i,index)=>(
-        <Item key={index} nombre={i.nombre} precio={i.precio} tipo={i.tipo}/>
+        <Item key={index} nombre={i.nombre} precio={i.precio}
+         tipo={i.tipo} img={i.img} />
       ) ) 
       : 
       <p>Trayendo información desde base de datos...</p>}

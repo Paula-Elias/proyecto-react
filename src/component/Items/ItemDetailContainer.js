@@ -4,25 +4,30 @@ import ItemDetail from './ItemDetail';
 export default function ItemDetailContainer(props) {
 
     const [item, setItem] = useState(false);
+    let id = props.match.params.id;
 
     useEffect(() => {
             setTimeout(() =>  {
-                fetch('https://5fdd034948321c00170125e4.mockapi.io/api/v1/plantas/2')
+                fetch(`data.json/${id}`)
                 .then(response =>  {
                     return response.json();
                 })
                 .then(data =>  {
                     setItem(data)
                 })
-            }, 2000);
-            console.log(fetch); 
+            }, 1000);
+            console.log(item);
+             
     }, []); 
-
+   
     return (
         <div> 
-            {item ?  ( <ItemDetail nombre={item.nombre} precio= {item.precio} />) : 
+            {item ?  ( <ItemDetail nombre={props.nombre} precio= {props.precio} 
+             id={props.id} img src={props.img}  />) : 
             ( <p>Trayendo información desde base de datos ...</p>)
-            }
+            } 
          </div>
-    ); 
+       
+    );   
+  
 }

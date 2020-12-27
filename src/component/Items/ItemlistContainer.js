@@ -1,8 +1,7 @@
 import React from 'react'; 
-import Contador from '../Items/ItemCount'; 
 import '../Items/ItemCount.css';
 import ItemList from '../Items/ItemList';
-import Item from '../Items/Item'; 
+
 
 function ItemListContainer(props) {
     return (
