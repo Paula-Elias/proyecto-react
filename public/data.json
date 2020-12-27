@@ -26,63 +26,64 @@
     "precio": "234",
     "img": "https://http2.mlstatic.com/D_NQ_NP_797274-MLA43311529194_082020-O.webp"
 },
-  {"id": "5", 
+
+    {"id": "5", 
         "tipo": "Kokedamas", 
         "nombre": "Kokedama Especiales", 
         "precio": "234",
         "img": "https://http2.mlstatic.com/D_NQ_NP_687466-MLA44239610169_122020-O.webp"
      },
     
-    {"id": "6", 
+    {"id": "7", 
     "tipo": "Cuadros Vivos", 
     "nombre": "Cuadros Vivos Especiales", 
     "precio": "250",
     "img": "https://http2.mlstatic.com/D_NQ_NP_981308-MLA28536496484_102018-O.webp"
 },
     
-    {"id": "7", 
+    {"id": "8", 
     "tipo": "Cuadros Vivos", 
     "nombre": "Cuadros Vivos de exterior", 
     "precio": "264",
     "img": "https://http2.mlstatic.com/D_NQ_NP_920214-MLA31018394434_062019-O.webp"
 },
     
-    {"id": "7", 
+    {"id": "9", 
     "tipo": "Plantas Especiales", 
     "nombre": "Plantas Ornamentales de interior", 
     "precio": "298",
     "img": "https://http2.mlstatic.com/D_NQ_NP_20392-MLA20188568994_102014-O.webp"
 },
     
-    {"id": "8", 
+    {"id": "10", 
     "tipo": "Plantas Especiales", 
     "nombre": "Plantas Ornamentales de exterior", 
     "precio": "300",
     "img": "https://http2.mlstatic.com/D_NQ_NP_22453-MLA20230244728_012015-O.webp"
 },
     
-    {"id": "9", 
+    {"id": "11", 
     "tipo": "Ecosistemas Verticales", 
     "nombre": "Ecosistemas verticales (por metro cuadrado)", 
     "precio": "125",
     "img": "https://www.elvergelpaisajismo.com/images/galvertical/PU%203.jpg"
 },
     
-    {"id": "10", 
+    {"id": "12", 
     "tipo": "Ecosistemas Verticales", 
     "nombre": "Ecosistemas verticales por 10 metros cuadrados", 
     "precio": "1050",
     "img": "https://i.pinimg.com/originals/71/93/15/7193159b4a2a5652f369821852fc2034.jpg"
 },
     
-    {"id": "11", 
+    {"id": "13", 
     "tipo": "Ecosistemas Verticales", 
     "nombre": "Jardin vertical (por metro cuadrado)", 
     "precio": "150",
     "img": "https://fotografias-compromiso.atresmedia.com/clipping/cmsimages01/2019/10/31/16D228D3-2643-46C1-A14B-29976E9D11D2/58.jpg"
 },
     
-    {"id": "12", 
+    {"id": "14", 
     "tipo": "Ecosistemas Verticales", 
     "nombre": "Jardin vertical (por 10 metros cuadrados)", 
     "precio": "1100",
