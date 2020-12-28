@@ -5,7 +5,7 @@ import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import ItemListContainer from './component/Items/ItemlistContainer'; 
 import ItemDetailContainer from './component/Items/ItemDetailContainer'; 
-import ItemDetail from './component/Items/ItemDetail';
+
 
 
 function App() {

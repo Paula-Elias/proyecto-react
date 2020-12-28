@@ -1,5 +1,6 @@
 import React,  {useState, useEffect} from 'react'; 
 import Item from './Item';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function ItemList(props) {
@@ -8,7 +9,7 @@ function ItemList(props) {
 
     useEffect(()=>{
       setTimeout(()=> {
-        fetch(`data.json`)
+        fetch(`https://demo8880263.mockable.io/plantas`)
           .then((response)=> {
             return response.json();
           })
@@ -16,20 +17,21 @@ function ItemList(props) {
             setItems(data);
           });
       }, 3000);
-    },[]) //Esto se ejecuta apenas se monta el componente / onInit
+    },[]) 
     console.log(items);
 
     return(
-      <div>
-      {
-      items ? 
-      items.map((i,index)=>(
-        <Item key={index} nombre={i.nombre} precio={i.precio}
-         tipo={i.tipo} img={i.img} />
-      ) ) 
-      : 
-      <p>Trayendo información desde base de datos...</p>}
-      
+      <div className="container-fluid d-flex">
+        <div className="row justify-content-around col-md-auto"> 
+                      {
+                        items ? 
+                        items.map((i,index)=>(
+                          <Item key={index} nombre={i.nombre} precio={i.precio}
+                          tipo={i.tipo} img={i.img} id={i.id} comentario={i.comentario}/>
+                        ) ) 
+                        : 
+                        <p>Cargando...</p>}
+        </div>
       </div>
     )
 };

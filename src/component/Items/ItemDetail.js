@@ -9,9 +9,11 @@ export default function ItemDetail(props) {
         <h3>Tu Selección de Carrito es: </h3>
      
        <h4> {props.nombre} </h4>
-        <img src={props.img} />
-        <h6>{props.nombre}</h6>
-        <p>${props.precio}</p>
+       <img src={props.img} /> 
+        <h4>{props.nombre}</h4>
+        <h3>${props.precio}</h3>
+        <h6>Comentarios de clientes: {props.comentario}</h6>
+
 
         <Contador />
         <button>Comprar</button>

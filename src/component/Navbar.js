@@ -11,7 +11,7 @@ class Navbar extends React.Component {
   
             <nav className="navbar navbar-expand-md">
  
-		    <a className="navbar-brand" href="https://www.google.com/">Hijas Del Monte</a>
+		    <a className="navbar-brand" href="/">Hijas Del Monte</a>
 		    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		     	<span className="navbar-toggler-icon"></span>
 		    </button>
