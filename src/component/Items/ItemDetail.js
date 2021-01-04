@@ -16,7 +16,7 @@ export default function ItemDetail(props) {
 
 
         <Contador />
-        <button>Comprar</button>
+        
         <hr></hr>
      
       </div>

@@ -19,7 +19,6 @@ export default function ItemDetailContainer(props) {
             }, 1000)
     }, []); 
 
-    console.log(item);
 
     return (
         <div>  

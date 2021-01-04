@@ -1,6 +1,6 @@
 import React from 'react'; 
 import './Navbar.css'; 
-import CartWidget from '../component/Items/CartWidget'; 
+import Cart from '../component/Items/CartWidget'; 
 
 
 class Navbar extends React.Component {
@@ -31,7 +31,7 @@ class Navbar extends React.Component {
 			        </li>
 			    </ul>
 
-				<CartWidget />
+				<Cart />
 		    </div>
  
 		</nav>
