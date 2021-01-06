@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom'; 
+
 import '../Items/ItemCount.css'; 
 
 
-function Contador() {
+function Contador(props) {
 
   const [count, setCount] = useState(0)
   
@@ -15,12 +15,9 @@ useEffect(()=>{
       setCount(5)
     }
   }
+  props.func(count); 
 },[count]) 
 
-function add() {
-  setCount(count);
-  console.log(count)
-}
 
   return(
     <div>
@@ -29,8 +26,6 @@ function add() {
     {count}
     <input disabled={count === 0 ?  true : false} type="button" value="Eliminar" onClick={()=>setCount(count-1)}/>
 
-    <Link to="/carrito"><button onClick={add}> Agregar al carrito </button>   </Link>
-  
     </div>
     )
   }
