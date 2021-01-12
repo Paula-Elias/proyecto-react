@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import '../Items/ItemCount.css'; 
+import './ItemCount.css'; 
 
 
 function Contador(props) {

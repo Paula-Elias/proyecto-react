@@ -1,11 +1,13 @@
 import React from 'react'; 
-import '../Items/ItemCount.css';
-import ItemList from '../Items/ItemList';
+import '../contador/ItemCount.css';
+import ItemList from './ItemDetail';
 
 
 function ItemListContainer(props) {
     return (
+        
             <div>
+                 
                 <h3>
                     Bienvenido {props.nombre} a nuestra exclusiva tienda de naturaleza viva
                 </h3>

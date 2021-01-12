@@ -1,6 +1,7 @@
 import React,  {useState, useEffect} from 'react'; 
 import Item from './Item';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Spinner} from 'react-bootstrap';
 
 
 function ItemList(props) {
@@ -30,7 +31,7 @@ function ItemList(props) {
                           tipo={i.tipo} img={i.img} id={i.id} comentario={i.comentario}/>
                         ) ) 
                         : 
-                        <p>Cargando...</p>}
+                        <p>  <Spinner animation="border" variant="success" /> Cargando...</p>}
         </div>
       </div>
     )

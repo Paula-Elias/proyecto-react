@@ -1,5 +1,6 @@
 import React,  {useState, useEffect} from 'react'; 
 import ItemDetail from './ItemDetail'; 
+import {Spinner} from 'react-bootstrap'; 
 
 export default function ItemDetailContainer(props) {
 
@@ -24,7 +25,7 @@ export default function ItemDetailContainer(props) {
         <div>  
             {item ?  ( <ItemDetail nombre={item.nombre} precio= {item.precio} 
              id={item.id} img={item.img} comentario={item.comentario} />) : 
-            ( <p>Cargando...</p>)
+            ( <p>  <Spinner animation="border" variant="success" /> Cargando...</p>)
             } 
            
          </div>

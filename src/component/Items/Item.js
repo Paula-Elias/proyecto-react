@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css';
 
 
-
 function Item(props){
 
   return (
