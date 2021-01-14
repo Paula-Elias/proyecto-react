@@ -22,7 +22,8 @@ useEffect(()=>{
   return(
     <div>
     
-    <input disabled={count === 5 ?  true : false} type="button" value="Agregar" onClick={()=>setCount(count+1)}/>
+    <input disabled={count === 5 ?  true : false} type="button" 
+    value="Agregar" onClick={()=>setCount(count+1)}/>
     {count}
     <input disabled={count === 0 ?  true : false} type="button" value="Eliminar" onClick={()=>setCount(count-1)}/>
 
