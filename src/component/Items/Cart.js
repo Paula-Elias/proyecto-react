@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import  { CartContext } from '../../Context/CartContext'; 
 
 function Cart() {
-    const [plantas, plantasContador, addItem, eliminaPlantas, totalPlantas, eraser] =  useContext(CartContext); 
+    const { plantas, plantasContador, addItem, eliminaPlantas, totalPlantas, eraser } =  useContext(CartContext); 
 
     useEffect(()=>{
         console.log(plantas)
