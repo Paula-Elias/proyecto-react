@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React,  { useEffect } from 'react'; 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'; 
 import './App.css';
 import Navbar from './component/estaticos/Navbar'; 
@@ -11,8 +11,9 @@ import ItemList from './component/Items/ItemList';
 import CartContextProvider from '../src/Context/CartContext'; 
 
 
-
 function App() {
+
+
   return (
     <div className="App">
       <CartContextProvider> 
