@@ -17,7 +17,7 @@ function Item(props){
           to={{ pathname: `/itemdetail/${props.id}`, state: { test: "test" } }}
         > {props.nombre}</Link>  </h6>
         <h5 className="card-text text-secondary">Precio: $ {props.precio}</h5>
-        <p className="btn btn-outline-sucess"> Familia de plantas:  {props.tipo}   </p>
+        <p className="btn btn-outline-sucess"> Familia de plantas:  {props.familia}   </p>
 
       </div>
 </div>

@@ -13,27 +13,31 @@ export default function ItemDetailContainer(props) {
     
   useEffect(() => {
     const db = getFirestore()
-    const itemsCollection = db.collection("items") 
-    const planta = itemsCollection.doc(id)
+    const itemCollection = db.collection("items") 
+    const planta = itemCollection.doc(id)
 
+    
     planta
     .get()
     .then((snapshot) => {
         const data = snapshot.data()
         setItem(data)
+            if(snapshot.size === 0) {
+            console.log('no resultados');
+            }
       })
       
-     /* .catch((err) =>  {
+      .catch((err) =>  {
       console.log(err)
-    }) */
+    }) 
     }, [])
-/*     console.log(item.id)
- */
+   console.log(item)
+ 
     return (
         <div>  
-            {item ?  ( <ItemDetail nombre={item.nombre} precio= {item.precio} 
-              img={item.img} comentario={item.comentario} />) : 
-            ( <p>  <Spinner animation="border" variant="success" /> Cargando...</p>)
+            {item ?  ( <ItemDetail id={item.id} nombre={item.nombre} precio= {item.precio} 
+            familia = {item.familia}  img={item.img} comentario={item.comentario} />) : 
+            ( <p>  <Spinner animation="border" variant="success" /> Cargando...  <hr/><hr/> </p> )
             } 
            
          </div>

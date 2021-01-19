@@ -12,9 +12,9 @@ function ItemList(props) {
 
     useEffect(() => {
       const db = getFirestore()
-      const items = db.collection("items").where('precio', '>', 2) 
-    
-  
+      const items = db.collection("items").where('precio', '>', 2)  
+      /* const plantas = db.collection */
+
       items
       .get()
       .then((snapshot) => {
@@ -23,13 +23,24 @@ function ItemList(props) {
             ...doc.data(),
           }));
           setItems(data)
-          console.log(items)
+          console.log( db.collection)
+
+          if(snapshot.size === 0) {
+            console.log('no resultados');
+            }
 
         })
-     /*   .catch((err) =>  {
+       .catch((err) =>  {
         console.log(err)
-      }) */
+      }) 
       }, [])
+
+      /* plantas.get().then((snapshot) =>  {
+        const data = snapshot.docs.map((doc) => ({
+          id: doc.id, 
+          ...doc.data(),
+      } )
+ */
 
 
     return(
@@ -38,8 +49,8 @@ function ItemList(props) {
                       {
                         items ? 
                         items.map((i,index)=>(
-                          <Item key={index} nombre={i.nombre} precio={i.precio}
-                          tipo={i.familia} img={i.img} comentario={i.comentario}/>
+                          <Item key={index} id={i.id} nombre={i.nombre} precio={i.precio}
+                          familia={i.familia} img={i.img} comentario={i.comentario}/>
                         ) ) 
                         : 
                         <p>  <Spinner animation="border" variant="success" /> Cargando...</p>}

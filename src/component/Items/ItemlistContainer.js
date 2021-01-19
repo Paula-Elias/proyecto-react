@@ -1,6 +1,6 @@
 import React from 'react'; 
 import '../contador/ItemCount.css';
-import ItemList from './ItemDetail';
+import ItemList from './ItemList';
 
 
 function ItemListContainer(props) {
