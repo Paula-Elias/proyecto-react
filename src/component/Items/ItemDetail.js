@@ -24,14 +24,14 @@ export default function ItemDetail(props) {
        <h4> {props.nombre} </h4>
        <img src={props.img} /> 
         <h3> Precio: ${props.precio}</h3>
-        <h6>Comentarios de clientes: {props.comentario}</h6>
+        <h5>Comentarios de clientes: {props.comentario}</h5>
         
         <Contador func={giveMeCount} />
           <input onClick={()=>addItem(props.nombre, props.precio, count)} type="button" value={`Añadir al carrito ${count}`}/>  
       <hr></hr>
-       <Link to="/Carrito/">Ir al carrito</Link> 
-       
-       <Link to="/ItemlistContainer/">Seguir Comprando</Link> 
+      <button> <Link to="/Carrito/">Ir al carrito</Link> </button> 
+       <button><Link to="/ItemlistContainer/">Seguir Comprando</Link>  </button> 
+       <button> <Link exact to={ `/category/${props.familia}`}>Más productos de {props.familia}</Link> </button> 
         
        <hr></hr>
 

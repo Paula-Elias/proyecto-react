@@ -22,7 +22,7 @@ function CartWidget() {
               <span>
                 <FontAwesomeIcon  icon={faShoppingCart} />  
               </span>
-               <p> {plantasContador()} </p>
+               <li> {plantasContador()} </li>
             </Link>     
           </div> 
        

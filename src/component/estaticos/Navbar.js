@@ -1,6 +1,8 @@
 import React from 'react'; 
 import './Navbar.css'; 
 import CartWidget from './CartWidget'; 
+import { Link } from 'react-router-dom';
+import Nosotros from '../pages/Nosotros';
 
 
 class Navbar extends React.Component {
@@ -17,17 +19,18 @@ class Navbar extends React.Component {
 		    </button>
 		    <div className="collapse navbar-collapse" id="navbarCollapse">
 			    <ul className="navbar-nav mr-auto">
-			        <li className="nav-item active">
-			          	<a className="nav-link" href="https://www.google.com/">Inicio <span className="sr-only">(current)</span></a>
+			        <li className="nav-item">
+			          	<Link to="/nosotros/" className="nav-link">Nosotros </Link>
+						  
 			        </li>
 			        <li className="nav-item">
-			          	<a className="nav-link" href="https://www.google.com/">Nosotros</a>
+			          	<Link to="/ItemlistContainer/" className="nav-link">Tienda</Link>
 			        </li>
 			        <li className="nav-item">
-			          	<a className="nav-link" href="https://www.google.com/">Tienda</a>
+			          	<Link to='/carrito'  className="nav-link">Carrito</Link>
 			        </li>
-			        <li className="nav-item">
-			          	<a className="nav-link" href="https://www.google.com/">Carrito</a>
+					<li className="nav-item">
+			          	<Link to="/category/:familia" className="nav-link">Categorias</Link>
 			        </li>
 			    </ul>
 

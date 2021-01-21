@@ -13,10 +13,23 @@ a {
  padding: 10px;
  text-decoration: none;
  text-transform: none;
- background-color: green !important;
  color: white !important;
 }
 
 .navbar-brand {
     font-size: 2.5rem !important;
+    
 }
+
+.navbar a, button, li, h6 {
+    color: white;
+
+    background-color: green !important;
+}
+
+ p, button, h6 {
+margin: 10px;
+padding: 10px;
+}
+
+

@@ -32,5 +32,11 @@ padding: 5rem;
 }
 
 a {
+
     margin: 0px;
+}
+
+.card-title a {
+    /* background-color: #008000; */
+color: white;
 }

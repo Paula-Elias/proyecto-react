@@ -28,7 +28,7 @@ function Cart() {
         <h5>${totalPlantas()}</h5>
         <hr></hr>
 
-            <Link to="/ItemlistContainer/">volver</Link>
+           <button> <Link to="/ItemlistContainer/">volver</Link> </button>
             <hr></hr>
            
         </div>

@@ -12,7 +12,7 @@ function ItemList(props) {
 
     useEffect(() => {
       const db = getFirestore()
-      const items = db.collection("items").where('precio', '>', 2)  
+      const items = db.collection("items")
       /* const plantas = db.collection */
 
       items
@@ -41,6 +41,7 @@ function ItemList(props) {
           ...doc.data(),
       } )
  */
+console.log(items);
 
 
     return(
@@ -50,13 +51,13 @@ function ItemList(props) {
                         items ? 
                         items.map((i,index)=>(
                           <Item key={index} id={i.id} nombre={i.nombre} precio={i.precio}
-                          familia={i.familia} img={i.img} comentario={i.comentario}/>
+                           familia={i.familia}  img={i.img} comentario={i.comentario}/>
                         ) ) 
                         : 
                         <p>  <Spinner animation="border" variant="success" /> Cargando...</p>}
         </div>
       </div>
-    )
+    ) 
 };
 
 export default ItemList; 

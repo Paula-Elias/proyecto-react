@@ -36,7 +36,7 @@ export default function ItemDetailContainer(props) {
     return (
         <div>  
             {item ?  ( <ItemDetail id={item.id} nombre={item.nombre} precio= {item.precio} 
-            familia = {item.familia}  img={item.img} comentario={item.comentario} />) : 
+             familia = {item.familia}   img={item.img} comentario={item.comentario} />) : 
             ( <p>  <Spinner animation="border" variant="success" /> Cargando...  <hr/><hr/> </p> )
             } 
            
