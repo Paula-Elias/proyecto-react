@@ -13,7 +13,7 @@ function ItemList(props) {
     useEffect(() => {
       const db = getFirestore()
       const items = db.collection("items")
-      /* const plantas = db.collection */
+   
 
       items
       .get()
@@ -34,13 +34,6 @@ function ItemList(props) {
         console.log(err)
       }) 
       }, [])
-
-      /* plantas.get().then((snapshot) =>  {
-        const data = snapshot.docs.map((doc) => ({
-          id: doc.id, 
-          ...doc.data(),
-      } )
- */
 console.log(items);
 
 

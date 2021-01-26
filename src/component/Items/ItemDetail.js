@@ -27,7 +27,9 @@ export default function ItemDetail(props) {
         <h5>Comentarios de clientes: {props.comentario}</h5>
         
         <Contador func={giveMeCount} />
-          <input onClick={()=>addItem(props.nombre, props.precio, count)} type="button" value={`Añadir al carrito ${count}`}/>  
+          <input onClick={()=>addItem(props.nombre, props.precio, count)}
+           type="button"
+            value={`Añadir al carrito ${count}`}/>  
       <hr></hr>
       <button> <Link to="/Carrito/">Ir al carrito</Link> </button> 
        <button><Link to="/ItemlistContainer/">Seguir Comprando</Link>  </button> 

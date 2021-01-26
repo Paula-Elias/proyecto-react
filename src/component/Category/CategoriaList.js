@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Item from './Item';
+import Item from '../Items/Item';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {getFirestore} from './../../firebase/firebase'; 
+import {getFirestore} from '../../firebase/firebase'; 
 
 function CategoriaList(props) {
 
@@ -20,7 +20,7 @@ function CategoriaList(props) {
                 id: doc.id, 
                 ...doc.data(),
             })); 
-            console.log("--------------", data);
+            /* console.log("--------------", data); */
             setItems(data)
             setLoading(false)
         })
@@ -31,7 +31,7 @@ function CategoriaList(props) {
         return items.map((p, i) => (
             p.familia != 'familia' ?
             <div /* className="container-fluid d-flex" */ >
-                <div className="row justify-content-around col-md-auto">
+                <div className="container-fluid   ">
               <Item key={i} id={p.id} img={p.img} nombre={p.nombre} precio= {p.precio} familia= {p.familia}  />
                </div>
             </div>

@@ -3,6 +3,7 @@ import './Navbar.css';
 import CartWidget from './CartWidget'; 
 import { Link } from 'react-router-dom';
 import Nosotros from '../pages/Nosotros';
+import CategoriasListContainer from "../Category/categoriasListContainer";
 
 
 class Navbar extends React.Component {
@@ -30,7 +31,7 @@ class Navbar extends React.Component {
 			          	<Link to='/carrito'  className="nav-link">Carrito</Link>
 			        </li>
 					<li className="nav-item">
-			          	<Link to="/category/:familia" className="nav-link">Categorias</Link>
+			          	<Link to="/categoryList" className="nav-link">Categorias</Link>
 			        </li>
 			    </ul>
 

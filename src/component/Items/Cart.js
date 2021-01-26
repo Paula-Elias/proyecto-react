@@ -1,6 +1,9 @@
 import React,  { useState, useEffect, useContext } from 'react'; 
 import { Link } from "react-router-dom";
 import  { CartContext } from '../../Context/CartContext'; 
+import OrdenFinal from './OrdenFinal';
+import { Button} from 'react-bootstrap';
+
 
 function Cart() {
     const { plantas, totalPlantas, eraser } =  useContext(CartContext); 
@@ -21,15 +24,12 @@ function Cart() {
             onClick={()=>eraser()}  />
           </div>
         ))}
-           
-            <hr></hr>
-
          <h5>Total:</h5>
         <h5>${totalPlantas()}</h5>
         <hr></hr>
-
-           <button> <Link to="/ItemlistContainer/">volver</Link> </button>
-            <hr></hr>
+           <button> <Link to="/ItemlistContainer/">Volver</Link> </button>
+           <button> <Link to="/OrdenFinal/" >Finalizar Compra </Link></button>
+            
            
         </div>
       );
