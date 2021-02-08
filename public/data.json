@@ -20,21 +20,21 @@
     "img": "https://http2.mlstatic.com/D_NQ_NP_783153-MLA43323932463_082020-O.webp"
 },
     
-    {"id": "4", 
+    {"id": 4, 
     "tipo": "Cuadros Vivos", 
     "nombre": "Cuadros Vivos comunes", 
     "precio": "234",
     "img": "https://http2.mlstatic.com/D_NQ_NP_797274-MLA43311529194_082020-O.webp"
 },
 
-    {"id": "5", 
+    {"id": 5, 
         "tipo": "Kokedamas", 
         "nombre": "Kokedama Especiales", 
         "precio": "234",
         "img": "https://http2.mlstatic.com/D_NQ_NP_687466-MLA44239610169_122020-O.webp"
      },
     
-    {"id": "7", 
+    {"id": 6, 
     "tipo": "Cuadros Vivos", 
     "nombre": "Cuadros Vivos Especiales", 
     "precio": "250",

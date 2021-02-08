@@ -45,16 +45,3 @@ export default function ItemDetailContainer(props) {
     );   
   
 }
-
- /*    useEffect(() => {
-            setTimeout(() =>  {
-                fetch(`https://demo8880263.mockable.io/plantas`)
-                .then(response =>  {
-                    return response.json();
-                })
-                .then(data =>  {    
-                    setItem(data[id])
-                   
-                })
-            }, 1000)
-    }, []);  */

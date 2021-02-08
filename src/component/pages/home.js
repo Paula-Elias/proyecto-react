@@ -1,20 +1,18 @@
 
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import   {Carousel} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'
+import Recomendation from './Recomendation'; 
 
-/* import ItemListContainer from '../Items/ItemlistContainer'; 
- */
 
-function home(props) {
+function home() {
     return (
         <div>
-            <h3>
-                    Bienvenido {props.nombre} a nuestra exclusiva tienda de naturaleza viva
-                </h3>
+            <h2>
+                    Bienvenido a nuestra exclusiva tienda de naturaleza viva
+                </h2>
             <br></br>
 
             <Carousel>
@@ -65,13 +63,17 @@ function home(props) {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+<br />
 
-            <button><Link
+<Recomendation />
+          <h2>Mirá el catálogo más completo  que tenemos para vos: </h2>
+            <h6> <button><Link  
           to={{ pathname: /ItemlistContainer/ }}
-        > LIstado de articulos   </Link>  </button>
+          > LIstado de articulos   </Link>  </button></h6>
       
         <hr></hr>
         </div>
+           
     )
 }
 

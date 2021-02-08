@@ -1,8 +1,6 @@
 
 import React from 'react'
-import  { CartContext } from '../../Context/CartContext'; 
 import './Home.css'
-
 
 
 function Nosotros() {
@@ -25,7 +23,7 @@ De esa experiencia, me parece oportuno rescatar el comienzo de todo: ¿cómo nac
 En un camino de larga búsqueda, en el que queríamos ofrecer algo hecho por nosotras mismas, se nos ocurrió que nada mejor que ofrecer un pedacito de vida a la que pudiéramos dar forma con nuestras propias manos. Y así fue que empezamos con nuestra producción de las kokedamas! esa técnica milenaria que nos atraía hace largo rato por la particularidad de ofrecer un soporte no convencional en el cultivo de plantas 🌱
 Porque Hijas soy yo, es mi amiga,  son mis amigxs, es mi familia, somos un montón de personas que nos colaboramos y nos apoyamos en emprender y aprender lo que nos apasiona! 
 .
-Por todo eso y mucho más, gracias a mi amiga! Al universo y a la vida! Ésta es la historia de lo que hacemos desde el 💗
+Por todo eso y mucho más, gracias al universo y a la vida! Ésta es la historia de lo que hacemos desde el 💗
 <img src="/PS_producto 3.jpg" />
 </article>
 </div> 

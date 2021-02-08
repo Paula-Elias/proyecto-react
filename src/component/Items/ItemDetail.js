@@ -2,7 +2,6 @@ import { useState, useContext } from 'react';
 import  { CartContext } from '../../Context/CartContext'; 
 import Contador from '../contador/ItemCount';
 import { Link } from 'react-router-dom';
-import {getFirestore} from './../../firebase/firebase'; 
 
 
 

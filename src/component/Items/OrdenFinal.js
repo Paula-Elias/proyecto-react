@@ -4,7 +4,8 @@ import  { CartContext } from '../../Context/CartContext';
 import {getFirestore} from './../../firebase/firebase'; 
 import firebase from 'firebase'; 
 import '@firebase/firestore';
-import { Col, Button, Form,  Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'react-bootstrap';
+import { Col, Button, Form, Modal } from 'react-bootstrap';
+import './Item.css';
 
 
 function OrdenFinal() {
@@ -73,21 +74,22 @@ function OrdenFinal() {
               <h5>${totalPlantas()}</h5>
               <hr></hr>
           <Form style={{margin: '0 0 0 5vw'}}>
+          <Form.Group row>
+                        <Form.Label for="name" sm={6}>Tu Nombre y apellido:</Form.Label>
+                        <Col sm={6}>
+                        <input onChange={(e)=>setName(e.target.value)} type="name" name="name" id="name" placeholder="" />
+                        </Col>
+                    </Form.Group>
                     <Form.Group row>
-                        <Form.Label for="exampleEmail" sm={8}>Email</Form.Label>
+                        <Form.Label for="exampleEmail" sm={6}>Tu email:</Form.Label>
                         <Col sm={6}>
                         <input onChange={(e)=>setEmail(e.target.value)} type="email" name="email" id="email" placeholder="" />
                         </Col>
                     </Form.Group>
                     <Form.Group row>
-                        <Form.Label for="phone" sm={8}>Phone</Form.Label>
+                        <Form.Label for="phone" sm={6}>Tu número de telefono:</Form.Label>
                         <Col sm={6}>
                         <input onChange={(e)=>setPhone(e.target.value)} type="phone" name="phone" id="phone" placeholder="" />
-                        </Col>
-                    </Form.Group><Form.Group row>
-                        <Form.Label for="name" sm={8}>Name</Form.Label>
-                        <Col sm={6}>
-                        <input onChange={(e)=>setName(e.target.value)} type="name" name="name" id="name" placeholder="" />
                         </Col>
                     </Form.Group>
                     <Form.Group check row>
@@ -97,13 +99,13 @@ function OrdenFinal() {
                     </Form.Group>       
                {/*     MODAL     */}
                     <Modal show={modal} toggle={toggle}>
-                        <Modal.Header toggle={toggle}>Order ID</Modal.Header>
+                        <Modal.Header toggle={toggle}>Tu número de orden es:</Modal.Header>
                         <Modal.Body>
                             {orderId}
                         </Modal.Body>
                         <Modal.Footer>
                             <Button color="primary" onClick={clearState}>Limpiar Carrito</Button>{' '}
-                            <Button color="secondary" onClick={toggle}>Cancel</Button>
+                            <Button color="secondary" onClick={toggle}>Cancelar</Button>
                         </Modal.Footer>
                     </Modal>
           </Form>

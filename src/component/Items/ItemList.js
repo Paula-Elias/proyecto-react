@@ -54,18 +54,3 @@ console.log(items);
 };
 
 export default ItemList; 
-
-
-
-   /*  useEffect(()=>{
-      setTimeout(()=> {
-        fetch(`https://demo8880263.mockable.io/plantas`)
-          .then((response)=> {
-            return response.json();
-          })
-          .then((data)=>{
-            setItems(data);
-          });
-      }, 3000);
-    },[]) 
-    console.log(items); */

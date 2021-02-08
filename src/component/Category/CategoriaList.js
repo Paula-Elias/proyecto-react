@@ -20,7 +20,7 @@ function CategoriaList(props) {
                 id: doc.id, 
                 ...doc.data(),
             })); 
-            /* console.log("--------------", data); */
+          console.log("--------------", data); 
             setItems(data)
             setLoading(false)
         })

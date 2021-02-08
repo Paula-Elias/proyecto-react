@@ -1,9 +1,12 @@
 .App {
   font-family: 'Architects Daughter', cursive;
   text-align: center;
+  font-size: 1.2rem !important;
+
 }
 
 .container {
+  
     width: 100%;
     height: 950px;
 }
